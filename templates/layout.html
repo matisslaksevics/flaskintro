@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kipa layout nigga</title>
+    <title>Kipa layout</title>
     <link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="text.css") }}'>
   </head>
 
@@ -10,12 +10,16 @@
       <div class="container">
         <nav>
           <ul class='menu'>
-            <li class='active'><a href='/home'>Home</a></li>
+            <li {% if active_page == '/home'%}
+                  class = 'active'
+                {% endif %}>
+            <a href='/home'>Home</a></li>
             <li {% if active_page == '/about'%}
-                class = 'active'
-              {% endif %}>           
+                  class = 'active'
+                {% endif %}>           
             <a href='/about'>About</a></li>
             <li><a href='/contact'>Contact</a></li>
+            <li><a href='/params'>Params :P</a></li>
           </ul>
         </nav>
       </div>

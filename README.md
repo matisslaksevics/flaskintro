@@ -3,6 +3,7 @@
 - Python
 - HTML
 - JS
+- Flask
 - Nice
 
 😂 🔰 🔰 🔰
